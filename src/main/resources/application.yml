@@ -4,7 +4,10 @@ spring:
       server:
         git:
           uri: https://github.com/gone9227/spring-cloud-config.git
-          searchPaths: config
+#          searchPaths: config
+          searchPaths:
+            - "config/{application}"
+            - "."
 
 server:
   port: 8888
